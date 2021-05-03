@@ -15,7 +15,6 @@
 		A8268A3F263DF57900B9FFBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8268A3D263DF57900B9FFBB /* LaunchScreen.storyboard */; };
 		A8268A48263E3DA700B9FFBB /* ViewControllerJokePt2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8268A47263E3DA700B9FFBB /* ViewControllerJokePt2.swift */; };
 		A8268A4B263F71D100B9FFBB /* ViewControllerJokePt1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8268A4A263F71D100B9FFBB /* ViewControllerJokePt1.swift */; };
-		A8268A4E2640B26500B9FFBB /* CentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8268A4D2640B26400B9FFBB /* CentralViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		A8268A40263DF57900B9FFBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8268A47263E3DA700B9FFBB /* ViewControllerJokePt2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerJokePt2.swift; sourceTree = "<group>"; };
 		A8268A4A263F71D100B9FFBB /* ViewControllerJokePt1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerJokePt1.swift; sourceTree = "<group>"; };
-		A8268A4D2640B26400B9FFBB /* CentralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,6 @@
 				A8268A34263DF56F00B9FFBB /* SceneDelegate.swift */,
 				A8268A36263DF56F00B9FFBB /* ViewController.swift */,
 				A8268A38263DF56F00B9FFBB /* Main.storyboard */,
-				A8268A4D2640B26400B9FFBB /* CentralViewController.swift */,
 				A8268A4A263F71D100B9FFBB /* ViewControllerJokePt1.swift */,
 				A8268A3B263DF57900B9FFBB /* Assets.xcassets */,
 				A8268A3D263DF57900B9FFBB /* LaunchScreen.storyboard */,
@@ -150,7 +147,6 @@
 				A8268A37263DF56F00B9FFBB /* ViewController.swift in Sources */,
 				A8268A33263DF56F00B9FFBB /* AppDelegate.swift in Sources */,
 				A8268A35263DF56F00B9FFBB /* SceneDelegate.swift in Sources */,
-				A8268A4E2640B26500B9FFBB /* CentralViewController.swift in Sources */,
 				A8268A4B263F71D100B9FFBB /* ViewControllerJokePt1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

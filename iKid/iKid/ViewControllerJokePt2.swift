@@ -14,7 +14,6 @@ class ViewControllerJokePt2: UIViewController {
       get { return self._data }
       set(value) {
           self._data = value
-          //label1.text = value
       }
     }
     override func viewDidLoad() {

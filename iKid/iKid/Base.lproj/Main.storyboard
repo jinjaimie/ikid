@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="1704" y="-1182"/>
         </scene>
-        <!--Central View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="7dd-PV-swy">
             <objects>
-                <tabBarController id="kQ2-eD-0xC" customClass="CentralViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="kQ2-eD-0xC" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="m6W-Cf-uFk"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="odi-Dd-0UH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

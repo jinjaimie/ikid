@@ -11,9 +11,9 @@ class ViewController: UIViewController {
     var currentView = 0
     var k: ViewControllerJokePt2? = nil
     var j: ViewControllerJokePt1? = nil
-    var jokeList1 = ["Welcome to iKid the joke app", "good", "dad", "pun"]
+    var jokeList1 = ["Welcome to iKid the joke app", "good", "dad", "pun", "something went wrong"]
     var jokeList2 = ["That's a joke lol", "good 2", "dad 2", "pun 2"]
-    var idList = ["home", "good", "dad", "pun"]
+    var idList = ["home", "good", "dad", "pun", "something went wrong"]
     override func viewDidLoad() {
         super.viewDidLoad()
         buildController()
@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     }
     
     func buildController() {
-        NSLog(self.restorationIdentifier!)
         if (idList[currentView] != self.restorationIdentifier!) {
         switch self.restorationIdentifier {
             case "home":
@@ -34,10 +33,9 @@ class ViewController: UIViewController {
             case "pun":
                 currentView = 3
             default:
-                NSLog(self.restorationIdentifier!)
+                currentView = 4
             }
         }
-        NSLog("currentView changed to: " + idList[currentView])
         if j == nil {
             buildJ(currentView)
         }
