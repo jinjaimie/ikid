@@ -16,10 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujZ-xo-fXr">
-                                <rect key="frame" x="348" y="761" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujZ-xo-fXr">
+                                <rect key="frame" x="362" y="763" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="switchNext:" destination="b00-mS-Cgt" eventType="touchUpInside" id="QdN-gd-PXg"/>
                                 </connections>
@@ -27,6 +26,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wS6-fz-Ngl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wS6-fz-Ngl" firstAttribute="bottom" secondItem="ujZ-xo-fXr" secondAttribute="bottom" constant="20" id="oie-lq-r4S"/>
+                            <constraint firstItem="wS6-fz-Ngl" firstAttribute="trailing" secondItem="ujZ-xo-fXr" secondAttribute="trailing" constant="20" id="urE-Ab-7sS"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good Jokes" id="cmi-V2-uCP"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -42,16 +45,6 @@
                     <view key="view" contentMode="scaleToFill" id="pbg-XV-mmi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdJ-Sd-5g7">
-                                <rect key="frame" x="348" y="783" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="switchNext:" destination="TTj-ay-Hca" eventType="touchUpInside" id="7cI-Ot-4Cv"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1eN-3D-WpF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -71,8 +64,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyz-Z3-jSh">
-                                <rect key="frame" x="174" y="432" width="65" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyz-Z3-jSh">
+                                <rect key="frame" x="10" y="21.5" width="394" height="853"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Nyz-Z3-jSh" secondAttribute="height" multiplier="207:448" id="X57-RB-EVk"/>
+                                    <constraint firstAttribute="width" constant="394" id="Y1C-RW-RaN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -122,10 +119,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzc-Mq-Iaw">
-                                <rect key="frame" x="348" y="755" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzc-Mq-Iaw">
+                                <rect key="frame" x="362" y="763" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="switchNext:" destination="tYW-yh-gj6" eventType="touchUpInside" id="7Fu-Oo-zK8"/>
                                 </connections>
@@ -133,6 +129,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g0j-0R-pee"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g0j-0R-pee" firstAttribute="bottom" secondItem="Mzc-Mq-Iaw" secondAttribute="bottom" constant="20" id="H7p-E3-TaH"/>
+                            <constraint firstItem="g0j-0R-pee" firstAttribute="trailing" secondItem="Mzc-Mq-Iaw" secondAttribute="trailing" constant="20" id="dB9-7s-KMJ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad Jokes" id="E4w-LV-Pcj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -149,10 +149,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoY-wd-X7N">
-                                <rect key="frame" x="348" y="761" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoY-wd-X7N">
+                                <rect key="frame" x="362" y="763" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="switchNext:" destination="p78-IW-DRk" eventType="touchUpInside" id="YME-PI-Zbo"/>
                                 </connections>
@@ -160,6 +159,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="v34-m8-meN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v34-m8-meN" firstAttribute="bottom" secondItem="KoY-wd-X7N" secondAttribute="bottom" constant="20" id="TPv-UO-GRz"/>
+                            <constraint firstItem="v34-m8-meN" firstAttribute="trailing" secondItem="KoY-wd-X7N" secondAttribute="trailing" constant="20" id="Xss-Hp-pMj"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Puns" id="e3g-UB-6Km"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -176,8 +179,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-Wu-DSG">
-                                <rect key="frame" x="172" y="432" width="69" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-Wu-DSG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="394" id="Q4S-NW-au3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -186,8 +192,8 @@
                         <viewLayoutGuide key="safeArea" id="J4r-uH-rb2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QOV-Wu-DSG" firstAttribute="centerX" secondItem="yuc-0T-L3x" secondAttribute="centerX" id="SR6-2Q-18S"/>
                             <constraint firstItem="QOV-Wu-DSG" firstAttribute="centerY" secondItem="yuc-0T-L3x" secondAttribute="centerY" id="j7M-Jj-HPT"/>
+                            <constraint firstItem="QOV-Wu-DSG" firstAttribute="centerX" secondItem="yuc-0T-L3x" secondAttribute="centerX" id="vdD-gp-mJE"/>
                         </constraints>
                     </view>
                     <connections>

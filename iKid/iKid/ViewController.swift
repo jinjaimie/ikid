@@ -11,9 +11,9 @@ class ViewController: UIViewController {
     var currentView = 0
     var k: ViewControllerJokePt2? = nil
     var j: ViewControllerJokePt1? = nil
-    var jokeList1 = ["Welcome to iKid the joke app", "good", "dad", "pun", "something went wrong"]
-    var jokeList2 = ["That's a joke lol", "good 2", "dad 2", "pun 2"]
-    var idList = ["home", "good", "dad", "pun", "something went wrong"]
+    var jokeList1 = ["Welcome to iKid the joke app", "Helvetica and Times New Roman walk into a bar.", "Why are elevator jokes so classic and good?", "Why was 6 afraid of 7?", "something went wrong"]
+    var jokeList2 = ["You are not suppose to be here...", "“Get out of here!” shouts the bartender. “We don’t serve your type.”", "They work on many levels.", "Because 7 ate(8) 9!", "something went wrong"]
+    var idList = ["home", "good", "dad", "pun"]
     override func viewDidLoad() {
         super.viewDidLoad()
         buildController()
