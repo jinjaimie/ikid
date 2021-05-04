@@ -9,11 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
     var currentView = 0
+    var kkTrack = 0;
     var k: ViewControllerJokePt2? = nil
     var j: ViewControllerJokePt1? = nil
-    var jokeList1 = ["Welcome to iKid the joke app", "Helvetica and Times New Roman walk into a bar.", "Why are elevator jokes so classic and good?", "Why was 6 afraid of 7?", "something went wrong"]
+    var knockKnock = ["Knock, knock.", "Who’s there?", "Luke.", "Luke who?", "Luke through the peep hole and find out."]
+    var jokeList1 = ["Welcome to iKid the joke app. \n Click on a type of joke to get started!", "Helvetica and Times New Roman walk into a bar.", "Why are elevator jokes so classic and good?", "Why was 6 afraid of 7?", "something went wrong"]
     var jokeList2 = ["You are not suppose to be here...", "“Get out of here!” shouts the bartender. “We don’t serve your type.”", "They work on many levels.", "Because 7 ate(8) 9!", "something went wrong"]
-    var idList = ["home", "good", "dad", "pun"]
+    var idList = ["home", "good", "dad", "pun", "knock"]
     override func viewDidLoad() {
         super.viewDidLoad()
         buildController()
@@ -32,8 +34,10 @@ class ViewController: UIViewController {
                 currentView = 2
             case "pun":
                 currentView = 3
-            default:
+            case "knock":
                 currentView = 4
+            default:
+                currentView = 5
             }
         }
         if j == nil {
@@ -76,6 +80,19 @@ class ViewController: UIViewController {
                 self.addChild(to!)
                 self.view.insertSubview(to!.view, at: 0)
                 to!.didMove(toParent: self)
+                if currentView == 4 && to == j {
+                    j!.changeData(knockKnock[kkTrack])
+                    kkTrack += 1;
+                    if (kkTrack == 5) {
+                        kkTrack = 0;
+                    }
+                } else if currentView == 4 && to == k {
+                    k!.changeData(knockKnock[kkTrack])
+                    kkTrack += 1;
+                    if (kkTrack == 5) {
+                        kkTrack = 0;
+                    }
+                }
             }
         }
     

@@ -19,12 +19,17 @@ class ViewControllerJokePt1: UIViewController {
           }
     override func viewDidLoad() {
         super.viewDidLoad()
-        changeData()
+        changeLabel()
         // Do any additional setup after loading the view.
     }
     
-    func changeData() {
+    func changeLabel() {
         label1.text = data
+    }
+    
+    func changeData(_ new: String) {
+        data = new
+        changeLabel()
     }
 
     /*
